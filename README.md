@@ -18,11 +18,22 @@ The most common full sequence from raw data to answer looks like:
 from simple_rag import RAG
 
 data = [
-    ...
+  {
+    "id": 1,
+    "answer": "Answer 1",
+    "question": "Question 1",
+    "url": "https://example.com/"
+  },
+  {
+    "id": 2,
+    "answer": "Answer 2",
+    "question": "Question 2",
+    "url": "https://example.com/"
+  },
+  #...
 ]
 
-model = "..."
-
+model = "paraphrase-multilingual-MiniLM-L12-v2"
 rag = RAG(data, model)
-rag.query("...")
+rag.query("Question?")
 ```
