@@ -1,6 +1,6 @@
 # simple-rag
 
-A typical RAG application has two main components:
+A typical [RAG application](https://python.langchain.com/v0.1/docs/use_cases/question_answering/) has two main components:
 
 **Indexing:** a pipeline for ingesting data from a source and indexing it. This usually happens offline.
 
